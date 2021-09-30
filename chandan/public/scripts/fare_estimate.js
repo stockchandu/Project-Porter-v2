@@ -1,14 +1,33 @@
 let get_item = localStorage.getItem("city_val");
+ console.log("get_item ", get_item);
 
 let convert_obj = JSON.parse(get_item);
 
 document.getElementById("pick_up_location").innerText = convert_obj[0].pick_up;
 document.getElementById("drop_off_location").innerText = convert_obj[0].drop_of;
 
+let totalKm=convert_obj[0].km
+
+let convertToNum=parseInt(totalKm)
+vehiclePricePerKm(convertToNum);
+
+function vehiclePricePerKm(km){
+    let threeWheeler = 34 * km;
+    let eightFt=44 * km;
+    let threeWheelerHelper=37 * km;
+    showPriceByVehicleType(threeWheeler,eightFt,threeWheelerHelper)
+}
+
+function showPriceByVehicleType(threeWheeler,eightFt,threeWheelerHelper){
+ document.getElementById("price_1").innerHTML=`₹ ${threeWheeler}`;
+ document.getElementById("price_2").innerHTML=`₹ ${eightFt}`;
+ document.getElementById("price_3").innerHTML=`₹ ${threeWheelerHelper}`;
+}
+
+
 let btn = document.getElementById("show_edit_option");
 
 function showDiv() {
-
     let main_parent = document.createElement("div");
 
     main_parent.setAttribute("id", "m_p");
@@ -22,6 +41,7 @@ function showDiv() {
     let main_div_1_child_2 = document.createElement("div");
 
     let cross_image = document.createElement("img");
+
     cross_image.src = "https://simg.nicepng.com/png/small/242-2425648_close-remove-delete-exit-cross-cancel-trash-comments.png";
 
     main_div_1_child_2.append(cross_image);
@@ -47,7 +67,7 @@ function showDiv() {
     let input_2 = document.createElement("input");
     input_2.setAttribute("type", "text");
     input_2.placeholder = "Drop Location";
-
+ 
     let button = document.createElement("button");
     button.innerText = "GET ESTIMATE"
 
@@ -86,10 +106,7 @@ function showDiv() {
 btn.addEventListener("click", showDiv);
 
 
-
 function remove_show(img, main_parent) {
-
-
     img.onclick = function () {
         document.getElementById('fare_parent_1').style.visibility = "visible";
         main_parent.style.display = "none";
@@ -98,9 +115,8 @@ function remove_show(img, main_parent) {
 }
 
 function Change_Value(input_1, input_2, btn, main_parent) {
-
     btn.onclick = function () {
-
+        changePrice(input_1, input_2)
         let store_new_val = [
 
             {
@@ -121,8 +137,8 @@ function Change_Value(input_1, input_2, btn, main_parent) {
         let convert_obj = JSON.parse(store_new_pick_up);
 
 
-        document.getElementById("pick_up_location").innerText = convert_obj[0].new_pick_up;
-        document.getElementById("drop_off_location").innerText = convert_obj[0].new_drop_off;
+    document.getElementById("pick_up_location").innerText = convert_obj[0].new_pick_up;
+    document.getElementById("drop_off_location").innerText = convert_obj[0].new_drop_off;
 
         setTimeout(function () {
 
@@ -131,13 +147,43 @@ function Change_Value(input_1, input_2, btn, main_parent) {
 
         }, 1000)
 
-
-        setTimeout(function(){
-
-            document.getElementById("price_1").innerText ="₹ 3400"
-            document.getElementById("price_2").innerText ="₹ 5400"
-            document.getElementById("price_3").innerText ="₹ 6400"
-        },1000)
-
     }
+        
+}
+
+async function changePrice(input_1,input_2){
+    
+    let pickUp=input_1.value
+    let dropOf=input_2.value
+
+    let distanceMatrix = await fetch(`https://api.distancematrix.ai/maps/api/distancematrix/json?origins=${pickUp}&destinations=${dropOf}&key=ioWaw43eHpkYS3cdowg6FAXeAeuLd`);
+
+
+    let KmResults = await distanceMatrix.json();
+
+    let { rows } = KmResults
+    try {
+        rows.forEach(({ elements }) => {
+            elements.forEach(({ distance }) => {
+                let { text } = distance
+                let km=parseInt(text)
+                let threeWheeler = 34 * km;
+                let eightFt= 44 * km;
+                let threeWheelerHelper= 37 * km;
+                changeVehiclePrice(threeWheeler,eightFt,threeWheelerHelper)
+            })
+        })
     }
+    catch (err) {
+        console.log(err)
+    }
+
+
+}
+
+
+function changeVehiclePrice(threeWheeler,eightFt,threeWheelerHelper){
+ document.getElementById("price_1").innerHTML=`₹ ${threeWheeler}`;
+ document.getElementById("price_2").innerHTML=`₹ ${eightFt}`;
+ document.getElementById("price_3").innerHTML=`₹ ${threeWheelerHelper}`;
+}

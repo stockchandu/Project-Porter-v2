@@ -11,20 +11,20 @@ app.use(express.static(__dirname + '/public'));
 
 
 //imports CRUD
-// const odishaController=require("./controller/odisha.controller")
-
-const reviewController=require("./controller/review.controller");
-const cityController=require("./controller/city.controller")
-app.use("/review",reviewController)
-app.use("/city",cityController)
-// app.use("/odisha",odishaController)
+// const reviewController=require("./controller/review.controller");
+// const cityController=require("./controller/city.controller")
+// app.use("/review",reviewController)
+// app.use("/city",cityController)
 //set views
-// app.set('views','./views');
 app.set('view engine', 'ejs');
 
 //Navigation
 app.get('/index',(req,res)=>{
     res.render('index')
+})
+
+app.get('/fare_estimate',(req,res)=>{
+    res.render('fare_estimate')
 })
 
 //listen on port 2000

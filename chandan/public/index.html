@@ -42,27 +42,27 @@
         // document.getElementById("getdata").addEventListener("click",data)
         // data()
 
-        let parent=document.getElementById("div_data")
-async function click_fun(){
-    parent.innerHTML=null
-    let sear=document.getElementById("add1").value;
-    console.log(sear)
+//         let parent=document.getElementById("div_data")
+// async function click_fun(){
+//     parent.innerHTML=null
+//     let sear=document.getElementById("add1").value;
+//     console.log(sear)
 
-    let data= await fetch(`http://localhost:2520/city?search=${sear}`)
+//     let data= await fetch(`http://localhost:2520/city?search=${sear}`)
 
-    let res=await data.json()
+//     let res=await data.json()
     
-res.forEach((ele)=>{
-    console.log(ele)
-})
+// res.forEach((ele)=>{
+//     console.log(ele)
+// })
 
-  let div=document.createElement("div")
+//   let div=document.createElement("div")
 
-  div.innerHTML=name
+//   div.innerHTML=name
 
-  parent.append(div)
+//   parent.append(div)
 
-}
+// }
 
 
 
