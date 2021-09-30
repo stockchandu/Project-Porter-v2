@@ -37,18 +37,19 @@ let errDiv_2 = document.getElementById("err_div_2");
 let errDiv_3 = document.getElementById("err_div_3");
 let errDiv_4 = document.getElementById("err_div_4");
 function show_error() {
-
-    let box_1 = document.getElementById("select_box_1").value;
+    var returnvalue=true
+    var box_1 = document.getElementById("select_box_1").value;
     // input value from user
-    let pickUp = document.getElementById("pick_up").value;
-    let dropOf = document.getElementById("drop_off").value;
-    let mobile_number = document.getElementById("mobile").value;
-    let req_value = document.getElementById("select_box_2").value;
+    var pickUp = document.getElementById("pick_up").value;
+    var dropOf = document.getElementById("drop_off").value;
+    var mobile_number = document.getElementById("mobile").value;
+    var req_value = document.getElementById("select_box_2").value;
 
     let mumbai = ["thane", "solapur", "navi", "juhu", "bandra"];
 
 
     if (pickUp === "" || dropOf === "" || mobile_number === "" || req_value === "") {
+        returnvalue=false
         errpickup.innerText = "Enter pickup address";
         errpickup.style.border = "1px solid red";
         errpickup.style.backgroundColor = "white";
@@ -99,6 +100,7 @@ function show_error() {
         errDiv_4.style.border = "1px solid red";
     }
     else if (mobile_number.length != 10 || isNaN(mobile_number)) {
+        returnvalue=false
         errmobilenum.innerText = "Enter correct number";
         errmobilenum.style.border = "1px solid red";
         errmobilenum.style.backgroundColor = "white";
@@ -125,7 +127,7 @@ function show_error() {
                 // break;
 
             } else if (pickUp != mumbai[i]) {
-
+                returnvalue=false
                 setTimeout(function () {
                     errpickup.innerText = "Enter radious city";
                     errpickup.style.border = "1px solid red";
