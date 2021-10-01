@@ -15,7 +15,7 @@ router.post("/",async(req,res)=>{
     })
 
     await  getestimatedata.save()
-    console.log("success")
+    // res.render("fare_estimate")
 }
 catch(err){
     console.log(err)

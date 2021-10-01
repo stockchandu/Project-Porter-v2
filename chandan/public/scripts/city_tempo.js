@@ -37,19 +37,19 @@ let errDiv_2 = document.getElementById("err_div_2");
 let errDiv_3 = document.getElementById("err_div_3");
 let errDiv_4 = document.getElementById("err_div_4");
 function show_error() {
-    var returnvalue=true
+   
     var box_1 = document.getElementById("select_box_1").value;
     // input value from user
     var pickUp = document.getElementById("pick_up").value;
     var dropOf = document.getElementById("drop_off").value;
     var mobile_number = document.getElementById("mobile").value;
     var req_value = document.getElementById("select_box_2").value;
-
-    let mumbai = ["thane", "solapur", "navi", "juhu", "bandra"];
+    data(pickUp,dropOf)
+    // let mumbai = ["thane", "solapur", "navi", "juhu", "bandra"];
 
 
     if (pickUp === "" || dropOf === "" || mobile_number === "" || req_value === "") {
-        returnvalue=false
+        
         errpickup.innerText = "Enter pickup address";
         errpickup.style.border = "1px solid red";
         errpickup.style.backgroundColor = "white";
@@ -117,45 +117,51 @@ function show_error() {
 
     else {
 
-        for (let i = 0; i < mumbai.length; i++) {
-            if (box_1 === "mumbai" && pickUp === mumbai[i]) {
-                setTimeout(function () {
-                    window.location.href = "http://localhost:2520/fare_estimate";
+     
+        document.getElementById("spinner").style.visibility="visible"
+        document.getElementById("btn_est").style.opacity="0.5"
+        
+       
+        
+        
+        setTimeout(function () {
+            window.location.href = "http://localhost:2520/fare_estimate";
 
-                }, 1000);
-
-                // break;
-
-            } else if (pickUp != mumbai[i]) {
-                returnvalue=false
-                setTimeout(function () {
-                    errpickup.innerText = "Enter radious city";
-                    errpickup.style.border = "1px solid red";
-                    errpickup.style.backgroundColor = "white";
-                    errpickup.style.color = "red";
-                    errpickup.style.textAlign = "center";
-                    errpickup.style.width = "15%";
-                    errpickup.style.marginLeft = "5%";
-                    errpickup.style.fontSize = "13px";
-                    errpickup.style.padding = "2px";
-                    errpickup.style.borderRadius = "5px";
-
-                }, 2000);
-            }
-        }
-
-        data_location(pickUp, dropOf);
+        }, 5000);
+        
     }
 
 
 }
+async function data(pickUp,dropOf){
 
-function data_location(pick, drop) {
+    try{
+        
+    let place= await fetch(`https://api.distancematrix.ai/maps/api/distancematrix/json?origins=${pickUp}&destinations=${dropOf}&key=ioWaw43eHpkYS3cdowg6FAXeAeuLd`)
 
+    let res= await place.json()
+    
+    let {rows}=res
+    
+      rows.forEach(({elements})=>{
+         
+        elements.forEach(({distance})=>{
+
+           let {text}=distance
+           data_location(pickUp, dropOf,text);
+        })
+      })
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+function data_location(pick, drop,text) {
     let city_store = [
         {
             pick_up: pick,
             drop_of: drop,
+            km:text,
 
         },
     ]
@@ -237,6 +243,7 @@ function change_clr() {
 
     if (document.getElementById("box_select").value === "surat") {
 
+        document.getElementById("show_parent").innerHTML =null;
 
         image_change.src = "https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/large_vehicles/2_wheeler-947e3c6aac74dcdd11fdd4059e4ee72132b276200dff063d6dff2c445f7aab5b.png"
         document.getElementById("change_name").innerText = "RENT 2 WHEELER";
@@ -266,7 +273,7 @@ function change_clr() {
         let child_4 = document.createElement("div");
 
         let create_img_1 = document.createElement("img");
-        create_img_1.src = "bike.png";
+        create_img_1.src = "/images/bike.png";
 
         create_img_1.setAttribute("id", "bike");
 
@@ -274,21 +281,21 @@ function change_clr() {
         create_txt_1.innerText = "2 WHEELER";
 
         let create_img_2 = document.createElement("img");
-        create_img_2.src = "tataAce.png";
+        create_img_2.src = "/images/tataAce.png";
 
         let create_txt_2 = document.createElement("p");
         create_txt_2.innerText = "TATA ACE";
 
 
         let create_img_3 = document.createElement("img");
-        create_img_3.src = "tatabold.png";
+        create_img_3.src = "/images/tatabold.png";
 
         let create_txt_3 = document.createElement("p");
         create_txt_3.innerText = "PICKUP 8FT";
 
 
         let create_img_4 = document.createElement("img");
-        create_img_4.src = "wheeler.png";
+        create_img_4.src = "/images/wheeler.png";
 
         let create_txt_4 = document.createElement("p");
         create_txt_4.innerText = "3 WHEELER";
@@ -306,6 +313,7 @@ function change_clr() {
 
         parent_div.append(sub_parent_1, sub_parent_2, sub_parent_3, sub_parent_4);
         document.getElementById("show_parent").append(parent_div);
+        document.getElementById("show_parent").style.display = "block"
 
         first_parent_show.style.display = "none"
  

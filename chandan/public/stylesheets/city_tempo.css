@@ -693,6 +693,14 @@ body {
 }
 
 
+#spinner{
+    position: absolute;
+    margin-left: 85%;
+    margin-top:-6.5%;
+    width:10%;
+   visibility:hidden;
+}
+
 /* we are transfering cities style start here */
 
 #transfor_parent {
