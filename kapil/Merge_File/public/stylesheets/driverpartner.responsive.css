@@ -1,0 +1,155 @@
+@media only screen and (max-width:600px) {
+    /* <!-- First div - form --> */
+    #details {
+        height: 52%;
+    }
+    #heading {
+        font-size: 15px;
+    }
+    #myselect, #myselect2 {
+        display: block;
+        width: 95%;
+    }
+    select {
+        height: 32px;
+    }
+    #regis {
+        height: 32px;
+        width:105px;
+        margin-left:2px;
+    }
+    #required, #required2 {
+        margin-right: 5%;
+        font-size: 10px;
+    }
+    #nm,#mobile{
+        width:90px;
+    }
+    #tk, #bk, #entername {
+        font-size: 10px;
+    }
+    #extradiv {
+        height: 20%;
+    }
+    #white {
+        width: 70px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    #content>h1, #content>p {
+        font-size: 18px;
+    }
+    #downloadapp h2 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    #downloadapp p {
+        font-size: 12px;
+    }
+    #butn {
+        margin-left: 15%;
+        background-size: 100px;
+        margin-top: 5px;
+        width: 221px;
+        height: 20px;
+    }
+    
+
+    /* <!-- SECOND DIV - PORTER ADVANTAGE --> */
+   
+        #ptrcontainer {
+            display: flex;
+            flex-direction: column;
+        }
+        .ptrbox {
+            width: 57%;
+            margin: 5px auto;
+        }
+    
+
+    /* <!-- THIRD DIV - Making life easy --> */
+   
+        #lifeasycont h2{
+            font-size: 15px;
+            margin-top: 10%;    
+        }
+        #lifeasycont {
+            margin: -40px;
+            margin-top: -50px;
+            margin-bottom: 40px;
+        }
+        #lifeimg {
+            margin-left: 40px;
+            margin-top: 70px;
+        }
+        #lifecontent>div>p,#lifecontent>div>h3{
+            font-size: 10px;
+        }
+        
+    
+
+    /* FOURTH DIV - ADDITIONAL BENEFITS */
+    
+        #benef {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            gap: 8%;
+            margin-left: 2px;
+        }
+        .benefbox p, .benefbox h3 {
+            font-size: 15px;
+            margin: 5px 15px;
+            width: 50%;
+            text-align: center;
+        }
+        .benefimg {
+            margin-left: 15px;
+        }
+        #benefcontainer {
+            margin-bottom: 100px;
+        }
+        #benefcontainer>h2,#benefbkg{
+            margin-left: 40px;
+        }
+    
+
+    /* Fifth div - changing life of people */
+   
+        #chnglifebox {
+           margin: 10px;
+            margin-left: 5px;
+        }
+        .chnglifecontent p,.chnglifefedbck p{
+            font-size: 10px
+        }
+        .chngsemicol {
+            height: 1000px;
+            width: 100%;
+            background-position: -59em;
+            margin-left: 40%;
+            margin-bottom: -62em;
+        }
+        #changelifehead {
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+    
+    
+    /* <!-- SIXTH DIV - OWN MULTIPLE VEHICLE --> */
+   
+        #multivehiclecont {
+            width: 85%;
+            margin: 50px;
+        }
+        #mutlivehicleimg img {
+            margin-left: 0;
+            width: 200px;
+            height: 200px;
+            margin-top: 60px;
+        }
+        #multivehiclecontent {
+            margin-left: 10px;
+            margin-top: 40px;
+        }
+    
+}

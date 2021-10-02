@@ -20,6 +20,10 @@ body {
     color: #4562FF;
 }
 
+#nm,#mobile{
+    width:87%;
+}
+
 #myselect2>option:nth-child(1), #myselect3>option:nth-child(1) {
     display: none;
 }
@@ -54,7 +58,7 @@ body {
 }
 
 #required2 {
-    margin-right: 40%;
+    margin-right: 50%;
     color: red;
     display: none
 }
@@ -148,7 +152,7 @@ select {
     background-repeat: no-repeat;
     border: none;
     border-radius: 1px;
-    margin-left: 17%;
+    margin-left: 15%;
     margin-top: 5px;
     width: 250px;
     height: 48px;
@@ -183,7 +187,7 @@ select {
     width: 97%;
     border: none;
     cursor: pointer;
-    margin-left: 2px;
+    margin-left: 5px;
 }
 
 #content>p {
@@ -290,16 +294,17 @@ select {
     margin-bottom: 250px;
 }
 
+#lifecontent>div>p,#lifecontent>div>h3{
+    font-size: 15px;
+}
+
 #lifeasycont {
     margin: 15px;
     padding: 0px 80px;
-    margin-top: -20px;
+    margin-top: -45px;
     margin-bottom: 40px;
 }
 
-#lifecontent{
-    font-size:10px;
-}
 #easy_under_dash {
     background-image: linear-gradient(112deg, #2962ff, #5e0be0);
     width: 30px;
@@ -312,7 +317,7 @@ select {
     display: grid;
     grid-template-columns: 55% 40%;
     gap: 4%;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 #lifebox h3, #lifebox p {
@@ -329,15 +334,16 @@ select {
 #lifeimg {
     background-image: url("https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/partners/driver_experience-87051334459376357b6125e2b776e61175461d3db60f2a5fdad972d51839137e.gif");
     background-repeat: no-repeat;
-    background-size: 100% 90%;
+    background-size: 90% 90%;
     border-radius: 10px;
     margin: 0px;
-    height: 400px;
+    height: 350px;
     border: 1px solid rgb(87, 87, 87);
     margin-left: 90px;
     position: relative;
     background-color: white;
     border: 1px solid black;
+    margin-top: 55px;
 }
 
 #lifecontent {
