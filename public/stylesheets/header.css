@@ -1,0 +1,142 @@
+
+    * {
+        margin: 0;
+    }
+    body {
+        overflow-x: hidden;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    #parent_header {
+        width: 100%;
+        background: linear-gradient(to right, #3056FA 30%, #4D26E9 60%);
+        height: 70px;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+
+    #parent_header>div:nth-child(1) {
+        width: 15%;
+        height: 100%;
+    }
+
+    /* logo style */
+    #parent_header>div:nth-child(1)>img {
+        width: 70%;
+        height: 100%;
+        margin-left: 15%;
+    }
+
+    #parent_header>div:nth-child(2) {
+        width: 30%;
+    }
+
+    #parent_header>div:nth-child(2)>p {
+
+        color: white;
+        margin: 6% 0;
+        font-size: 15px;
+    }
+
+
+    /* drive car style */
+    #parent_header>div:nth-child(3) {
+        margin: 1% 0 0 68.7%;
+        position: absolute;
+
+    }
+  
+
+    #parent_header>div:nth-child(4) {
+        width: 10%;
+        height: 7vh;
+        background-color: #FEDF00;
+        margin: 1% 0 0 25%;
+        font-size: 12px;
+        text-align: center;
+        color: #7300ff;
+    }
+    #parent_header>div:nth-child(4)>p{
+        font-weight:900;
+        margin-top: 1px;
+    }
+
+    #parent_header>div:nth-child(5) {
+        height:6.7vh;
+        width: 5%;
+        margin: 1% 0 0 0;
+        color: hsl(53, 100%, 50%);
+        font-weight: 700;
+        font-size:13px;
+        border-right: 1px solid #FEDF00;
+        border-top: 1px solid #FEDF00;
+        border-bottom: 1px solid #FEDF00;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #parent_header>div:nth-child(6) {
+        height: 2.3vh;
+        padding: 0.5%;
+        margin: 1% 0 0 0.5%;
+    }
+
+    #parent_header>div:nth-child(6)>img {
+        width: 90%;
+        margin-left: 18%;
+    }
+
+    #parent_header>div:nth-child(7) {
+        color: white;
+        height: 2.3vh;
+        margin-top: 1%;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+
+    /* second header style start here */
+    #header_1_1 {
+        width: 150%;
+        height: 7vh;
+        margin-top: 5%;
+        display: flex;
+        border-bottom: 1px solid rgb(236, 236, 236);
+        font-size: 13px;
+        box-shadow: 0px 15px 10px -15px rgb(0, 0, 0);  
+        font-weight: 900;
+        
+    
+    }
+
+    #header_1_1>div {
+        padding: 15px;
+        width: 7%;
+        font-weight: 700;
+
+    }
+
+    #header_1_1>div:nth-child(1) {
+        margin-left: 1%;
+        width:4%
+    }
+
+    #header_1_1>div:nth-child(5) {
+        margin-left:25%;
+        width: 2%;
+        font-weight: normal;
+    }
+
+    /* second headers style end here from line 105 to 127 */
+
+
+
+    /* sliding images style start here */
+    #slide_div_1 {
+        width: 100%;
+        margin-top: 0.1%;
+    }

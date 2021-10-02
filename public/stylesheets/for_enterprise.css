@@ -1,0 +1,706 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web';
+  font-style: normal;
+}
+body{
+    overflow-x:hidden;
+}
+
+
+
+
+    /*  header css end */
+
+/* .top-banner{
+
+
+} */
+
+#img-banner{
+    width: 100%;
+    height: 300px
+
+}
+
+.banner-title {
+    position: absolute;
+    top: 10px;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #5e0be0;
+    margin: auto;
+   
+}
+.under_bar{
+    width: 110px;
+    height: 3px;
+    background-color:#2962FF;
+    margin-top: 4%;
+}
+
+#form{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    background-color: #fedf00;
+    width: 320px;
+    height: 500px;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    margin-top: 0em;
+   
+}
+
+
+/* css 2nd part end*/
+
+
+                .form-enterprize {
+                    font-family: 'Titillium Web';
+                         font-style: normal;
+                        font-weight: 300;
+                        background-color: #fedf00;
+                        width: 18rem;
+                        border-radius: 2px;
+                        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+                        display: flex;
+                        flex-direction: column;
+                        padding: 14px 18px;
+                        position: absolute;
+                        right: 40px;
+                        top:20%;
+                      
+                }
+
+                
+
+                
+
+                #thanks{
+                    text-align: center;
+                    
+                }
+               #thanks p{
+                font-size: 1.2rem;
+                   
+                 }
+                 #thanks button{
+                    color:#2962FF;
+                    margin-top: 1rem;
+                    border: 1px solid #2962FF;
+                    font-size: medium;
+                    font-weight: 700;
+                     
+                 }
+            
+
+                #form-enterprize h2 {
+                      text-align: center;  
+                }
+
+                input, select,button{
+                    width: 99%;
+                    margin-top: 10%;
+                    height: 30px;
+                }
+
+                /* select {
+                    
+                } */
+
+                input :focus {
+                    outline: none !important;
+                    border-color: 10px solid black;
+
+                }
+
+
+                #Request-callback {
+                    background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
+                    border: 1px solid #E0C600;
+                    border-radius: 2px;
+                    padding-top: 0;
+                    padding-bottom: 0%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    font-size: 16px;
+                    cursor: pointer;
+                    
+                }
+
+                .formerror {
+                    color: red;
+                    position: absolute;
+                    /* top: 150px; */
+                    z-index: auto;
+                }
+/*  form css end here*/
+
+/* feature css */
+.feature-container {
+    background-color: #EDEAFD;
+    padding: 40px;
+}
+
+.title {
+    font-weight: 600;
+    color: #212121;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #4632EE;
+    margin-left: 5%;
+}
+
+.feature-cont {
+    display: flex;
+  margin-top: 20px;
+  width: 65%;
+  justify-content: center;
+}
+.feature{
+    width: 30%;
+    text-align: center;
+
+}
+.feature img{
+    width: 200px;
+    height: 150px;
+}
+.feature h3{
+    font-size: 15px;
+}
+.feature p{
+    color: #818181;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+/* feature css end here*/
+
+
+
+/* GROWING NETWORK css start here */
+
+
+
+.network_cont{
+  margin-top: 20px;
+}
+.main{
+    display: grid;
+    margin-left: 5%;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(2, 25%) 50%;
+}
+.description{
+    grid-column: 1/3;
+    font-size: 13px;
+}
+.img_cont{
+    grid-row: 1/4;grid-column: 3/4;
+    margin-left: 10%;
+}
+.img_cont img{
+    height: 450px;
+}
+
+/* .network-feature  {
+    
+}
+
+#network_title {
+   
+} */
+
+.network-feature h1 {
+    color: #4632EE;
+    font-size: 40px;
+    margin-top: 10%;
+    text-align: center;
+   
+} 
+
+.network-feature p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+   
+} 
+
+
+
+
+/* GROWING NETWORK css end here */
+/* GROWING NETWORK css end here */
+
+
+
+
+.bussiness_cont {
+    display: flex;
+     margin: auto;
+     justify-content: center;
+}
+.cont2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.cont2> div{
+    margin: 2rem;
+    width: 300px;
+    height: 300px;
+    padding-top: 2.4rem;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.big_bar {
+    height: 30px;
+    width: 100%;
+    background-image: linear-gradient(94deg, #2962FF, #5e0be0);
+    margin-top: 1rem;
+
+   
+}
+
+
+
+
+.manager h2 {
+    padding: 0px 20px;
+    padding-top: 3rem;
+    color: #2962FF;
+   
+    
+}
+
+
+
+
+
+
+.bussiness_positions{
+    color: #2962FF;
+    padding: 0.5rem 1.2rem;
+    
+     
+}
+.bussiness_desc{
+    padding: 1rem;
+  
+}
+
+/* industries section css start here */
+
+#industries{
+    margin-top: 15px;
+
+    
+}
+
+.industriesCont {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+
+#industriesImg {
+    height: auto;
+    width: 60%;
+    
+
+}
+
+.industriesDes {
+    transform: rotate(0deg) skewX(20deg) translateX(-50%);
+    position: absolute;
+      left:50%;
+    font-style: italic;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.industriestable {
+    color: white;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 27.8rem;
+    
+    transform: rotate(0deg) skewX(-7deg) translateX(0);
+    border-radius: 4px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    position: relative;
+    top: 8rem;
+    right:4rem;
+   
+}
+
+.tableLeft {
+    width: 10rem;
+    background-color: #8E8FF8;
+    padding: 1.2rem 3rem 1.2rem 1rem;
+
+  
+}
+
+.tableright {
+    width: 10rem;
+    background-color: #6A79F9;
+    padding: 1.2rem 1rem 1.2rem 3rem;
+    
+}
+
+
+.box1 {
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+   
+}
+
+.industriestable hr {
+    margin: 1% 10%;
+    border: solid 1px #cdcdcd;
+    width: 80%;
+    opacity: 0.5;
+   
+
+}
+
+
+
+/* query section css start here */
+.query {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    height: 240px;
+    width: 75%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    padding: 3rem;
+    margin: 40px auto;
+    justify-content: center;
+   
+}
+
+#Request-callback2 {
+    background: linear-gradient(135deg, #2962FF 0%, #5E0BE0 100%);
+    border: none;
+   border-radius: 2px;
+   padding: 7px 20px;
+   text-align: center;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size:0.8em;
+   margin-top: 25px;
+   cursor: pointer;
+   width: 30%;
+   height: 7vh;
+   
+   
+}
+.right {
+    background-color: rgb(119, 172, 119);
+  
+}
+
+
+.querydesc{
+    padding-top: 1.5rem;
+   
+}
+
+.querydesc span{
+    color: #2962FF;
+    font-weight: 900;
+  
+}
+
+/* footer section */
+
+
+
+/*for max screen 640*/
+
+@media only screen and (max-width:500px){
+    
+#img-banner  {
+    width: 100%;
+    height: auto;
+}
+.banner-title{
+    width: 100%;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+}
+
+.feature-cont{
+    display: inline-block;
+}
+
+#form{
+    top: 40%;  
+}
+.query-img-cont img{
+    width: 150px;
+    height: auto;
+}
+.querydesc{
+    font-size: 8px;
+}
+.form-enterprize{
+    top: 60%;
+}
+}
+
+#still_question {
+    width: 100%;
+    height: 130px;
+    background-color: #EEE9FD;
+    display: flex;
+    margin-top: 5%;
+}
+
+#still_question>div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 1%;
+    background-color: rgb(255, 248, 248);
+    border-radius: 50px;
+}
+
+#still_question>div:nth-child(1)>img {
+    width: 60px;
+    height: 100px;
+    margin-left: 25px;
+
+}
+d
+
+#still_question>div:nth-child(2) {
+    width: 50%;
+    height: 100px;
+    margin-left: 1%;
+    margin-top: 3%;
+
+}
+
+#still_question_1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+#still_question_1>div:nth-child(1) {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(36, 35, 35);
+    margin-top: 3%;
+
+}
+
+#still_question_1>div:nth-child(2) {
+    width:25%;
+    padding: 13px 20px;
+    background-color: #3A3A3A;
+    margin-top: 15px;
+    color: white;
+    font-weight: 650;
+    border-radius: 2px;
+}
+
+
+/*for max screen 640*/
+
+@media only screen and (max-width:640px){
+    
+    #img-banner  {
+        width: 100%;
+        height: auto;
+    }
+    .banner-title{
+        width: 100%;
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
+        
+        
+    
+    }
+    #form{
+        width: 180px;
+        height: 400px;   
+    }
+
+    #form-enterprize h2{
+        font-weight: 50;
+        font-size: 20px;
+    }
+
+    input, select,button{
+        margin-top: 10%;
+    }
+    .title{
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .feature img{
+        width: 100px;
+        height: 80px;
+    }
+    .feature p{
+        font-size: 10px;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .img_cont img{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .network-feature h1 {
+        color: #4632EE;
+        font-size: 20px;
+        margin-top: 10%;
+        text-align: center;
+       
+    } 
+    
+    .network-feature p {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+       
+    } 
+    .main{
+        grid-template-rows: 100px 100px 100px;
+    }
+    .cont2{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .cont2> div{
+        margin: 0.7rem;
+        width: 180px;
+        height: 245px;
+        padding-top: 0rem;
+       
+      
+    }
+    .buss p{
+        font-size: 10px;
+    }
+    .manager h2{
+        font-size: 15px;
+        padding-left: 10px;
+       
+    }
+    .big_bar {
+        height: 22px;
+        width: 100%;
+        
+    }
+    .bussiness_positions{
+        padding-left: 10px;
+       
+        
+         
+    }
+    .industriesDes {
+        font-size: 10px;
+    }
+
+    #industriesImg{
+        height: 300px;
+    }
+    .industriestable {
+        width:250px; 
+        padding: 0;
+    }
+    .tableLeft, .tableright {
+        width: 125px;
+        height: 50px;
+        font-size: 12px;
+        padding: 0;
+    
+      
+    }
+    .box1 {
+        height: 30px;
+        
+       
+    }
+   .query-img-cont img{
+       width: 250px;
+       height: auto;
+   }
+   .querydesc{
+       font-size: 12px;
+   }
+   .form-enterprize {
+    
+         
+        font-weight: 200;
+        font-size: 16px;
+    
+        width: 200px;
+        right: 5%;
+        top:10%;
+      
+}
+  
+    
+    
+    
+
+    }
