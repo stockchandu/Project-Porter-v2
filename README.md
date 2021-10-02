@@ -1,6 +1,5 @@
 # **Project porter**
-Porter is India's largest marketplace for intra-city logistics, porter enables companies and users to book minitrucks online and track the movement of their goods across the city.
-its allow user to move goods from one place to another city.
+Porter is India's largest marketplace for intra-city logistics, porter enables companies and users to book minitrucks online and track the movement of their goods across the city.its allow user to move goods from one place to another city.
 
 ![porter](https://miro.medium.com/max/700/1*BpgRdBD9-FfbejqnuGRWUA.png)
 
@@ -9,33 +8,35 @@ its allow user to move goods from one place to another city.
 
 
 ## Technology used in the project
-1. HTML5
-2. CSS
-3. JAVASCRIPT
-4. EJS
-5. Node js - Express Framework
-6. MongoDB atlas(for storing data)
+1. HTML5.
+2. CSS.
+3. JAVASCRIPT.
+4. EJS.
+5. Node js - Express Framework.
+6. MongoDB atlas(for storing data).
 
 ## Challanges We faced during the Project 
-* Not storing data into database issue
-* Team members page connect to main file issue
-* connecting frontend to backend
+* Not storing data into database issue.
+* Team members page connect to main file issue.
+* Connecting frontend to backend.
 
 ## Few Screenshot of our project.
 
 ### 1.City Tempo
-![porter](https://miro.medium.com/max/700/1*BpgRdBD9-FfbejqnuGRWUA.png)
+![porter](https://miro.medium.com/max/700/1*gfB8HQmKcmBN1hAiJrPS-A.png)
 ![porter](https://miro.medium.com/max/700/1*tukPH3Wb-i7eb7O5qrUZEg.png)
 
 ### 2.Packer & Movers
-![porter](https://miro.medium.com/max/700/1*6ynp1NvAvZTJH8PobkHe7w.png)
+![porter](https://miro.medium.com/max/700/1*Syr2rvKNH2iTNLREFNrmqg.png)
 
 ### 3.Driver Partner
-![porter](https://miro.medium.com/max/700/1*2TkhwXoivjNZqGjyHLZlcA.png)
+![porter](https://miro.medium.com/max/700/1*-Y2FddyGnw2gIn7g_RzjlA.png)
 
 ### 4.For Enterprise
-![porter](https://miro.medium.com/max/700/1*gxUkh9lOsXTwAU-V8B3INw.png)
+![porter](https://miro.medium.com/max/700/1*F2WMmY3EcsOME45nEu2rJA.png)
 
+### Our all pages is Responsive (Update)
+![porter](https://miro.medium.com/max/481/1*C2YZWJT_jW9NDw2-Bx2Oug.png)
 
 
 ## How to clone our project
