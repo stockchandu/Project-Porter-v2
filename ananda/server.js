@@ -13,16 +13,16 @@ const port = process.env.PORT || 3010;
 
 //static files
 app.use(express.static("public"))
-app.use("/css", express.static(__dirname + "public/css"))
-app.use("/img", express.static(__dirname + "public/images"))
-app.use("/js", express.static(__dirname + "public/javascript"))
+//app.use("/css", express.static(__dirname + "public/css"))
+//app.use("/img", express.static(__dirname + "public/images"))
+//app.use("/js", express.static(__dirname + "public/javascript"))
 
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 //set views
-app.set("views", "./views")
+//app.set("views", "./views")
 app.set("view engine", "ejs")
 
 app.get("/", (req, res)=>{
@@ -36,7 +36,7 @@ app.get("/for_enterprise", (req, res)=>{
 })
 
 
-app.post("/add", async (req, res)=>{
+app.post("/added", async (req, res)=>{
     try{
 
         const resisterEnterprise = new Enterprise({
@@ -46,7 +46,7 @@ app.post("/add", async (req, res)=>{
         })
 
         resisterEnterprise.save()
-        res.status(200).render("for_enterprise")
+        res.status(200)
        
     } catch(error){
         res.status(400).send(error);

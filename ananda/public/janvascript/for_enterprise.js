@@ -126,10 +126,10 @@ function scrollup() {
         // document.body.scrollTop = 0; // For Safari
         // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         // window. location. replace("enterprise.html") 
-        window. location. replace("for_enterprise.js") 
+        window. location. replace("for_enterprise") 
         
       } 
 
 function backToPage() {
-        window. location. replace("for_enterprise.js") 
+        window. location. replace("for_enterprise") 
 }
