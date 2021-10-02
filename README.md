@@ -16,9 +16,10 @@ its allow user to move goods from one place to another city.
 5. Node js - Express Framework
 6. MongoDB atlas(for storing data)
 
-## Challanges We faced during the connecting frontend to backend
+## Challanges We faced during the Project 
 * Not storing data into database issue
 * Team members page connect to main file issue
+* connecting frontend to backend
 
 ## Few Screenshot of our project.
 
