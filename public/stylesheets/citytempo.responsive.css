@@ -1,4 +1,4 @@
-/* Header mobile responsiveness */
+/* city tempo responsiveness */
 @media only screen and (max-width: 600px) {
     #parent_header {
         width: 100%;
@@ -85,11 +85,11 @@
         height: 3px;
         margin-top: 15%;
     }
-  }
+ 
 
 
   /* Still have queation responsiveness */
-  @media only screen and (max-width: 600px) {
+ 
     #still_question>div:nth-child(1) {
         width: 80px;
         height: 80px;
@@ -119,14 +119,7 @@
         font-size: 10px;
     }
     
-
-}
-
-
-
-
   /* Footer Mobile responsiveness */
- @media only screen and (max-width: 600px) {
     #footer ,#footer_2{
         width: 100%;
         height:auto;
@@ -192,9 +185,7 @@
  #footer_2>div:nth-child(1){
      margin-left: 28%;
  }
-  } 
-
-  @media only screen and (max-width:600px){
+ 
     #pickup {
         width:98%;
         height: 700px;
@@ -498,6 +489,4 @@
         text-align: center;
     }
    
-
-
-  }
+}
