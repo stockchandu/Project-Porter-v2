@@ -14,7 +14,7 @@
     <link rel="icon" href="https://d35ppnqksufxmo.cloudfront.net/frontend_website/favicon.ico"> -->
     <title>Come Join Us! Attach your mini truck or bike with Porter</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/driver_partner.css">
    
 </head>
 
@@ -65,24 +65,25 @@
 
 
     <!-- body content start from here -->
+           <!-- First div - form -->
 
     <div id="register">
         <div id="right">
     
             <div id="details">
                 <form action="/adddata" method="POST">
-                    <h3 style="margin:15px 0px">ATTACH VEHICLE NOW</h3>
+                    <h3 style="margin:15px 0px" id="heading">ATTACH VEHICLE NOW</h3>
                     <div ><input  placeholder="Name" id="nm" type="text" name="name"/></div>
                     <div id="required">*This field is required</div>
                     <div ><input placeholder="Mobile Number" id="mobile" type="number" name="mobileno"/></div>
-                  <div  id="required2" ></div>
+                  <div  id="required2" >*This field is required</div>
                     <div id="city">
                       <span >
                         <select id="myselect" name="city">
                             <option id="cty">CITY</option>
-                            <option value="mumbai" >Mumbai</option>
-                            <option value="delhi">DELHI NCR</option>
-                            <option value="banglore">BANGALORE</option>
+                            <option>MUMBAI</option>
+                            <option>DELHI NCR</option>
+                            <option>BANGALORE</option>
                             <option>HYDERABAD</option>
                             <option>CHENNAI</option>
                             <option>AHMEDABAD</option>
@@ -96,6 +97,10 @@
                             <option>TATA ACE</option>
                             <option>3 WHEELER</option>
                             <option>ACE HELPER</option>
+                            <option>3 WHEELER HELPER</option>
+                            <option>TATA ACE OUTSTATION</option>
+                            <option>TATA 407-OUTSTATION</option>
+                            <option>TATA 407 RENTAL</option>
                         </select>
                     </span>
                   </div>
@@ -104,10 +109,13 @@
                             <option>WHERE DID YOU HEAR ABOUT US?</option>
                             <option>BUS ADS</option>
                             <option>PAMPHLET</option>
+                            <option>GARAGE HOARDING</option>
+                            <option>NEWSPAPER ADS</option>
+                            <option>DRIVER REFERRAL</option>
+                            <option>CUSTOMER REFERRAL</option>
                         </select>
                     </div>
                     <button id = "regis" onclick="register()">Register</button>
-
                 </form>
 
             </div>
@@ -130,7 +138,9 @@
             <p>Earn money by delivering goods, courier and packages. Get a part time or full time delivery job.</p>
         </div>
     </div>
-      <!-- SECOND DIV -->
+
+
+      <!-- SECOND DIV - PORTER ADVANTAGE -->
       <div id="ptradvt">
           <h2>PORTER ADVANTAGE</h2>
           <div id="ptrcolor"></div>
@@ -138,9 +148,11 @@
           <div id="ptrcontainer">
               <div class="ptrbox">
                   <div class="ptrimg" id="box1"></div class="ptradvttext">
-                  <h3>Regular Trips</h3>
-                  <p>With our growing presence across multiple cities,we always have our hands full! This means you will
-                      never run out of trips.</p>
+                    <div class="ptr_content">
+                        <h3>Regular Trips</h3>
+                        <p>With our growing presence across multiple cities,we always have our hands full! This means you will
+                            never run out of trips.</p>
+                    </div>
               </div>
               <div class="ptrbox">
                   <div class="ptrimg" id="box2"></div class="ptradvttext">
@@ -159,6 +171,8 @@
       </div>
       </div>
       </div>
+
+
       <!-- THIRD DIV -->
       <div id="lifeasycontr">
           <div id=lifebkg1>
@@ -193,7 +207,9 @@
           </div>
           </div>
         </div>
-      <!-- FOURTH DIV   -->
+
+
+      <!-- FOURTH DIV - ADDITIONAL BENEFITS   -->
         <div id="benefcontainer">
           <h2>Additional Benefits</h2>
           <div id="benefbkg"></div>
@@ -277,6 +293,7 @@
          </div>
         </div>
         </div> 
+        
       <!-- SIXTH DIV -->
         <div id="multivehiclecont">
           <h2>OWN MULTIPLE VEHICLES?</h2>
@@ -290,6 +307,7 @@
           </div>
           </div>
         </div>  
+
         <!-- SEVEN DIV -->
       <div class="body">
           <div class="ltitle">FREQUENTLY ASKED QUESTIONS</div>
