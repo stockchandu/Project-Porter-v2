@@ -65,18 +65,18 @@
     
             <div id="details">
                 <form action="/adddata" method="POST">
-                    <h3 style="margin:15px 0px">ATTACH VEHICLE NOW</h3>
+                    <h3 style="margin:15px 0px" id="heading">ATTACH VEHICLE NOW</h3>
                     <div ><input  placeholder="Name" id="nm" type="text" name="name"/></div>
                     <div id="required">*This field is required</div>
                     <div ><input placeholder="Mobile Number" id="mobile" type="number" name="mobileno"/></div>
-                  <div  id="required2" ></div>
+                  <div  id="required2" >*This field is required</div>
                     <div id="city">
                       <span >
                         <select id="myselect" name="city">
                             <option id="cty">CITY</option>
-                            <option value="mumbai" >Mumbai</option>
-                            <option value="delhi">DELHI NCR</option>
-                            <option value="banglore">BANGALORE</option>
+                            <option>MUMBAI</option>
+                            <option>DELHI NCR</option>
+                            <option>BANGALORE</option>
                             <option>HYDERABAD</option>
                             <option>CHENNAI</option>
                             <option>AHMEDABAD</option>
@@ -90,6 +90,10 @@
                             <option>TATA ACE</option>
                             <option>3 WHEELER</option>
                             <option>ACE HELPER</option>
+                            <option>3 WHEELER HELPER</option>
+                            <option>TATA ACE OUTSTATION</option>
+                            <option>TATA 407-OUTSTATION</option>
+                            <option>TATA 407 RENTAL</option>
                         </select>
                     </span>
                   </div>
@@ -98,10 +102,13 @@
                             <option>WHERE DID YOU HEAR ABOUT US?</option>
                             <option>BUS ADS</option>
                             <option>PAMPHLET</option>
+                            <option>GARAGE HOARDING</option>
+                            <option>NEWSPAPER ADS</option>
+                            <option>DRIVER REFERRAL</option>
+                            <option>CUSTOMER REFERRAL</option>
                         </select>
                     </div>
                     <button id = "regis" onclick="register()">Register</button>
-
                 </form>
 
             </div>
@@ -280,7 +287,7 @@
           <div id="multivehiclecontent">
             <h3>If you are a fleet owner and own multiple vehicles.</h3>
             <p>Keeping track of your vehicle fleet and optimising their efficiency can be a huge challenge.Partner with Porter to boost your earnings and manage your vehicles easily.</p>
-            <button id="mutibtn">CONTACT US</button>
+            <button id="mutibtn" onclick="topfunction()">CONTACT US</button>
           </div>
           </div>
         </div>  

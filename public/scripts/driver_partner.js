@@ -1,12 +1,12 @@
 //  FORM
 
 function register() {
- 
+
   var name = document.getElementById("nm").value;
   var city = document.getElementById("myselect").value;
   var mobile = document.getElementById("mobile").value;
 
-  
+
   if (name === "") {
     let nm = document.getElementById("nm");
     nm.style.border = "2px solid red"; document.getElementById("required").style.display = "block";
@@ -27,7 +27,7 @@ function register() {
     if (mobile === "") {
       msg.textContent = "*This field is required";
       msg.style.display = "block";
-      msg.style.marginRight = "50%";
+   
     }
     else if (mobile.length < 10) {
       msg.style.display = "block";
@@ -83,7 +83,7 @@ function register() {
   if (name !== "" && city !== "" && vehicle !== "" && hearabt !== "" && (mobile !== "" && mobile.length === 10)) {
     document.getElementById("details").style.display = "none";
     document.getElementById("extradiv").style.display = "block";
-    
+
   }
 
   var blk = document.getElementById("entername");
@@ -100,7 +100,7 @@ function register() {
     event.target.style.backgroundColor = "white";
   });
 
-  
+
 }
 
 function back() {
@@ -113,7 +113,10 @@ function back() {
   document.getElementById("details").style.display = "block";
 }
 
-
+//Multiple vehicle
+function topfunction(){
+    document.documentElement.scrollTop = 0;
+}
 
 // FAQ
 var coll = document.getElementsByClassName("collapsible");
