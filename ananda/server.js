@@ -42,7 +42,9 @@ app.post("/added", async (req, res)=>{
         const resisterEnterprise = new Enterprise({
             name:req.body.name,
             phone:req.body.phone,
-            email:req.body.email
+            email:req.body.email,
+            city:req.body.city,
+            trip:req.body.trip
         })
 
         resisterEnterprise.save()
