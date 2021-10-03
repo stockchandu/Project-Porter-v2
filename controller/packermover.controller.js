@@ -6,7 +6,7 @@ const router = express.Router();
 const PackerMoverUser=require("../model/packermover.model")
 
 router.post("/", async(req, res) => {
-    try{
+    
         const formdata = new PackerMoverUser({
             Name : req.body.name,
             Mobile : req.body.number,
@@ -14,12 +14,12 @@ router.post("/", async(req, res) => {
             Moving_From:req.body.from,
             Destination: req.body.to
         })
-        const registered = await formdata.save();
-        res.send(201);
-    }
-    catch {
-        res.status(400).send("Unable to save to database");
-    };
+         await formdata.save();
+       
+       setTimeout(()=>{
+        res.render("packer_mover")
+       },10000) 
+   
 });
 
 module.exports=router

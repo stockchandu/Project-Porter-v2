@@ -12,7 +12,7 @@ router.get("/driver_partner",  (req, res) => {
 
 });
 
-router.post("/adddata",  (req, res) => {
+router.post("/adddata", async(req, res) => {
         try{
             const driverpartnerformdata = new DriverPartner({
                 Name : req.body.name,
@@ -22,8 +22,11 @@ router.post("/adddata",  (req, res) => {
                 Hear: req.body.hear
             })
 
-            driverpartnerformdata.save();
-             res.status(201)
+            await  driverpartnerformdata.save();
+    
+            setTimeout(()=>{
+             res.render("driverpartner")
+            },10000) 
         }
         catch {
             res.status(400).send("Unable to save to database");

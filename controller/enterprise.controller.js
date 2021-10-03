@@ -12,8 +12,9 @@ router.post("/", async (req, res)=>{
         })
 
        await registerEnterprise.save()
-       console.log(registerEnterprise)
-        // res.status(200).render("for_enterprise")
+       setTimeout(()=>{
+        res.render("for_enterprise")
+       },10000) 
        
     } catch(error){
         res.status(400).send(error);
