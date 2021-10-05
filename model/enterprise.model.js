@@ -4,6 +4,9 @@ let enterpriseSchema = new mongoose.Schema({
     phone:{type:String},
     email:{type:String}
 
+},{
+    versionKey:false ,
+    timestamps:true, 
 })
 module.exports =  mongoose.model("enterprise", enterpriseSchema)
 
