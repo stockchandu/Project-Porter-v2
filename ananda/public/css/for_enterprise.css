@@ -479,7 +479,7 @@ body{
 }
 
 #form{
-    top: 40%;  
+    top: 50%;  
 }
 .query-img-cont img{
     width: 150px;
@@ -513,7 +513,8 @@ body{
     }
     #form{
         width: 180px;
-        height: 400px;   
+        height: 400px;  
+        
     }
 
     #form-enterprize h2{
