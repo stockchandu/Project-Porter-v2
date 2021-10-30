@@ -45,7 +45,7 @@ Porter is India's largest marketplace for intra-city logistics, porter enables c
 
 ## How to clone our project
 1.Go to visual studio code or open any terminal , type 
-```git clone https://github.com/stockchandu/upgrade_porter```
+```git clone https://github.com/stockchandu/Porter_Version_Final```
 
  we still need to work on few parts of our website , we will update from time to time.
 
