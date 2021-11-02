@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/estimate_data.css">
+    <title>Estimate User Data</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="text-center">Estimate User Details</div>
+    <div id="parent_data_driver">
+        <div>ID</div>
+        <div>City</div>
+        <div>Pickup Location</div>
+        <div>DropOff Location</div>
+        <div>Mobile</div>
+        <div>Requirement</div>
+    </div>
+
+    <div id="parentData"></div>
+
+    <script>
+        
+        const getEstimateData = async () => {
+
+            let dataRes = await fetch("http://localhost:2520/getestimateuserdata")
+
+            let res = await dataRes.json();
+
+            let { data } = res
+
+            data.forEach((element,index)=>{
+                
+                let mainDiv= document.createElement("div");
+                mainDiv.setAttribute("id","showParent")
+                
+                let div1 = document.createElement("div");
+                div1.innerHTML= index+1
+
+                let div2 = document.createElement("div");
+                div2.innerHTML= element.city
+
+                let div3 = document.createElement("div");
+                div3.innerHTML= element.pickup
+
+                let div4 = document.createElement("div");
+                div4.innerHTML= element.dropof
+
+                let div5 = document.createElement("div");
+                div5.innerHTML= element.mobile
+
+                let div6 = document.createElement("div");
+                div6.innerHTML= element.requirement
+
+                mainDiv.append(div1,div2,div3,div4,div5)
+                document.getElementById("parentData").append(mainDiv)
+            })
+
+        }
+
+        getEstimateData()
+    </script>
+</body>
+
+</html>

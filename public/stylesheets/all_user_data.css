@@ -1,0 +1,25 @@
+body {
+    font-weight: bold;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+  }
+
+  td,
+  th,
+  tr {
+    border: 1px solid #777575;
+    padding: 8px;
+  }
+
+  thead {
+    background-color: blue;
+    color: white;
+    align-items: center;
+  }

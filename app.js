@@ -30,7 +30,17 @@ app.use("/",driverController);
 const enterpriseController=require("./controller/enterprise.controller");
 app.use("/added",enterpriseController)
 
+const adminController = require("./controller/admin.controller");
+app.use("/",adminController);
 
+const adminSignupController = require("./controller/admin_signup.controller");
+app.use("/adminsignup",adminSignupController);
+
+const adminLoginController = require("./controller/admin_login.controller");
+app.use("/adminlogin",adminLoginController)
+
+const userDataController = require("./controller/user_data.controller");
+app.use("/",userDataController)
 
 //set views
 app.set('view engine', 'ejs');
@@ -50,6 +60,10 @@ app.get('/packer_mover',(req,res)=>{
 
 app.get("/for_enterprise", (req, res)=>{
     res.render("for_enterprise")
+})
+
+app.get("/get_estimate", (req, res)=>{
+    res.render("getEstimateUserData")
 })
 //listen on port 
 app.listen(port,async()=>{
