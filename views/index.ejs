@@ -96,7 +96,8 @@
 
         <div id="err_div_2">
             <div id="name_2">DropOff Address</div>
-            <div><input type="text" placeholder="Enter DropOff Address" id="drop_off" name="dropOf"></div>
+            <div><input type="text" placeholder="Enter DropOff Address" id="drop_off" name="dropOf" oniput="dropoff()"></div>
+            <div id="dropofdata"></div>
         </div>
 
         <div id="err_div_3">
@@ -831,7 +832,8 @@
         <div id="insert"></div>
     </div>
     <script src="/scripts/city_tempo.js"></script>
-    <script src="/scripts/city_tempo_search.js"></script>
+    <script src="/scripts/citytempo_pickup_search.js"></script>
+    <script src="/scripts/citytempo_dropof_search.js"></script>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");
@@ -841,7 +843,6 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    console.log(content);
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {

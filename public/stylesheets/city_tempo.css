@@ -11,7 +11,7 @@ body {
     position: absolute;
 }
 
-#pickupdata{
+#pickupdata,#dropofdata{
     width: 20vw;
     height: 20vh;
     background-color: white;
@@ -24,11 +24,11 @@ body {
     left:-2%
 }
 
-#pickupdata>div>img{
+#pickupdata>div>img,#dropofdata>div>img{
     width: 8%;
     height: 3vh;
 }
-#pickupdata>div{
+#pickupdata>div,#dropofdata>div{
     margin-top: 2%;
     font-weight: 600;
     width: 20vw;
