@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
         const pass = req.body.password;
         const emailFind = await Admin.findOne({ email: email })
         if (emailFind.password === pass) {
-            return res.status(201).render("get_estimate")
+            return res.status(201).render("getEstimateUserData")
         }
         
     else {

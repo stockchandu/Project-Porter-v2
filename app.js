@@ -13,6 +13,10 @@ app.use(express.static(__dirname + '/public'));
 //body parser
 app.use(express.urlencoded({extended:false}));
 
+const DriverPartner = require("./model/driverpartner.model");
+const packerMover = require("./model/packermover.model");
+const Enterprise = require("./model/enterprise.model")
+
 //imports CRUD
 //Get estimate controller  
 const estimateController=require("./controller/estimate.controller");
@@ -64,6 +68,30 @@ app.get("/for_enterprise", (req, res)=>{
 
 app.get("/get_estimate", (req, res)=>{
     res.render("getEstimateUserData")
+})
+
+//DriverPartneruserdata 
+app.get("/driverpartner", async (req,res)=>{
+    const data = await DriverPartner.find();
+    return res.render("driverPartnerUserData",{
+        dataList : data
+    })
+})
+
+//PackerAndMoveruserdata
+app.get("/packermover",async(req,res)=>{
+    const data = await packerMover.find();
+    return res.render("packerMoverUserData",{
+        packerList : data
+    })
+})
+
+//Enterpriseauserdata
+app.get("/enterprise",async(req,res)=>{
+    const data = await Enterprise.find();
+    return res.render("enterpriseUserData",{
+        packerList : data
+    })
 })
 //listen on port 
 app.listen(port,async()=>{

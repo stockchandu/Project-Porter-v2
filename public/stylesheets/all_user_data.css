@@ -4,6 +4,12 @@ body {
 
   h3 {
     text-align: center;
+    background-color: #14279B;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 0px;
+    border: 1px solid #777575;
+    padding: 5px;
   }
 
   table {
@@ -19,7 +25,21 @@ body {
   }
 
   thead {
-    background-color: blue;
+    background-color: #14279B;
     color: white;
     align-items: center;
   }
+
+  .header{
+    background-color: grey;color: black; font-weight: 700;
+}
+.header a{
+    color:black
+}
+.header a:hover{
+  color:black;
+}
+
+#logout{
+  text-decoration: underline;
+}
