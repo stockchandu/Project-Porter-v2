@@ -10,12 +10,35 @@ body {
     margin-top: 63%;
     position: absolute;
 }
+
+#pickupdata{
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    display: none;
+    border-left:1px solid rgb(177, 177, 177);
+    border-right:1px solid rgb(177, 177, 177);
+    border-bottom:1px solid rgb(177, 177, 177);
+    position: relative;
+    top: 15%;
+    left:-2%
+}
+
+#pickupdata>div>img{
+    width: 8%;
+    height: 3vh;
+}
+#pickupdata>div{
+    margin-top: 2%;
+    font-weight: 600;
+    width: 20vw;
+    display: flex;
+}
+
 /* sliding images style start here */
 #slide_div_1 {
     width: 100%;
 }
-
-
 
 /* get estimate style start here */
 #get_estimate {

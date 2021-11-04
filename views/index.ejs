@@ -90,7 +90,8 @@
 
         <div id="err_div_1">
             <div id="name_1">PickUp Address</div>
-            <div><input type="text" placeholder="Enter PickUp Address" id="pick_up" name="pickUp"></div>
+            <div><input type="text" placeholder="Enter PickUp Address" id="pick_up" name="pickUp" oninput="pickup()"></div>
+             <div id="pickupdata"></div>
         </div>
 
         <div id="err_div_2">
@@ -830,6 +831,7 @@
         <div id="insert"></div>
     </div>
     <script src="/scripts/city_tempo.js"></script>
+    <script src="/scripts/city_tempo_search.js"></script>
 
     <script>
         var coll = document.getElementsByClassName("collapsible");

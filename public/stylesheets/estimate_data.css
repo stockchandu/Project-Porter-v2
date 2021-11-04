@@ -2,6 +2,16 @@ body{
     margin: 0;
 }
 
+.header{
+    background-color: rgb(0, 0, 0);color: rgb(255, 255, 255); font-weight: 700;
+}
+.header a{
+    color:rgb(255, 255, 255)
+}
+.header a:hover{
+  color:rgb(17, 0, 255);
+}
+
 #parent_data_driver{
     display: flex;
     width: 100vw;
@@ -28,7 +38,6 @@ body{
     font-weight: 700;
     font-size: 1.5rem;
     background-color: #14279B;
-    margin-top: 20px;
     color: white;
     margin-bottom: 0px;
     border: 1px solid #777575;
@@ -44,7 +53,7 @@ body{
 }
 
 #showParent>div{
-    width: 15.9vw;
+    width: 18.5vw;
     margin-left: 0.5%;
     text-align: center;
     padding: 1%;
@@ -56,16 +65,7 @@ body{
     width: 5.3vw;
 }
 
-.header{
-    background-color: grey;color: black; font-weight: 700;
-}
-.header a{
-    color:black
-}
-.header a:hover{
-  color:black;
-}
 #logout{
     margin-left: auto;
-    text-decoration: underline;
+    text-decoration: none;
   }
