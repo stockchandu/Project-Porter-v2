@@ -8,7 +8,7 @@ Porter is India's largest marketplace for intra-city logistics, porter enables c
 ![porter](https://miro.medium.com/max/700/1*gfB8HQmKcmBN1hAiJrPS-A.png)
 
 
-#### 👉 [ Click here to Visit our Project](https://porter-logistics.herokuapp.com)
+#### [ Click here to Visit our Project](https://porter-logistics.herokuapp.com)
 
 
 ## Technology used in the project
@@ -49,7 +49,7 @@ Porter is India's largest marketplace for intra-city logistics, porter enables c
 
  we still need to work on few parts of our website , we will update from time to time.
 
-#### 👉 [ Click here to Read full blog](https://medium.com/@malikchandan926/cloning-of-porter-in-website-within-5-days-using-html-css-and-javascript-d58a09b8b8cd)
+#### [ Click here to Read full blog](https://medium.com/@malikchandan926/cloning-of-porter-in-website-within-5-days-using-html-css-and-javascript-d58a09b8b8cd)
 
 ### Credit
 * Ananda Gouda -Github Link-> https://github.com/AnandaGouda
@@ -57,4 +57,3 @@ Porter is India's largest marketplace for intra-city logistics, porter enables c
 * Kapil Mogre - Github Link -> https://github.com/kapilmogre1998
 * Chandan Kumar Malik - Github Link ->https://github.com/stockchandu
 
-🙏 Thank you 🙏
